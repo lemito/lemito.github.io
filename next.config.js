@@ -4,6 +4,11 @@ const withMDX = require("@next/mdx")({
 
 module.exports = withMDX({
   reactStrictMode: true,
+  images: {
+    domains: [
+      'https://png.pngtree.com',
+    ],
+  },
   pageExtensions: ["ts", "tsx", "mdx"],
   experimental: { esmExternals: true }
 });
